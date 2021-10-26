@@ -7,7 +7,6 @@ const flexboxModal = () => {
           showButton = document.getElementById('showModal'),
           form = document.getElementById('form')
 
-
     const showModal = () => {
         overlay.removeAttribute('style')
         overlay.classList.remove('modal__hidden')
@@ -23,10 +22,6 @@ const flexboxModal = () => {
     }
 
     closeButton.addEventListener('click', () => closeModal())
-
-    showButton.addEventListener('keydown', (e) => {
-        if ( e.key === 27 ) closeModal()
-    });
 
     overlay.addEventListener('click', () => closeModal())
 

@@ -12,26 +12,63 @@
     <div class="container">
         
         <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5">
-                <button id="showModal" class="col-md-2 btn btn-primary">Show Modal</button>
+            <div class="col-12 text-center mt-5">
+                <a 
+                    href="#modalEmail"
+                    id="showModal" 
+                    class="testmodal__link btn btn-primary">
+                    Show Modal
+                </a>
             </div>
-            
-            <div id="modalOverlay" class="modal__overlay modal__hidden" aria-hidden="true"></div>
 
-            <div id="modalWrapper" class="col-md-12 modal__wrapper modal__hidden" aria-hidden="true">
-                <div class="modal__form">
-                    <div class="col modal__img text-center">
-                        <img src="./img/email.png" alt="Subscribe to the mailing list">
-                    </div>          
-                    <h3 class="modal-title">Flex Modal</h3>
-                    <form action="#" class="form" id="form">
-                        <div class="mb-3">
-                            <label for="" class="col-form-label">Type email for feedback:</label>
-                            <input id="email" class="form-control" type="email" placeholder="Your email ..." />
-                            <button type="submit" class="col-12 mt-3 btn btn-primary">Subscribe</button>
-                        </div>
-                    </form>
-                    <a href="#" id="modalClose" class="modal__close">&times;</a>
+            <div id="modalEmail" class="testmodal">
+                <div class="testmodal__body">
+                    <div class="testmodal__content">
+                        <a 
+                            href="#" 
+                            id="testmodalClose" 
+                            class="testmodal__close close__modal">
+                            &times;
+                        </a>
+                        <div class="testmodal__img">
+                            <img 
+                                src="./img/email.png" 
+                                alt="Subscribe to the mailing list">
+                        </div>          
+                        <h3 class="testmodal__title">
+                            Flex Modal
+                        </h3>
+                        <p class="testmodal__text ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis recusandae ipsa magni sapiente quos aspernatur ab? Iure facere vel saepe debitis, maxime quod, repellendus veritatis similique modi expedita magnam incidunt?
+                            Molestias ut repudiandae non libero culpa! Aperiam reiciendis molestiae excepturi est aliquam at voluptates corrupti quas quia possimus. Voluptatem laboriosam labore ab quam sit illum quasi eaque quibusdam incidunt cumque.
+                            Reprehenderit sequi quasi amet officia iusto nulla cumque non similique tempore, provident tempora earum eos! Id sed et quis quasi praesentium sunt omnis cumque officia? Nam est accusamus dolor eveniet.
+                            Similique placeat recusandae nemo quas beatae! Error est facere perferendis. Harum quidem quaerat eos quis odio quas deserunt recusandae illo in deleniti tenetur, ipsum, quisquam dolorem fugiat dignissimos ut ducimus!
+                        </p>
+                        <form action="#" 
+                            class="testmodal__form" 
+                            id="form">
+                            <div class="testmodal__form-body">
+                                <label 
+                                    for="email" 
+                                    class="form-label">
+                                    Type email for feedback:
+                                </label>
+                                <input 
+                                    id="email" 
+                                    class="testmodal__input form-control" 
+                                    type="email" 
+                                    placeholder="Your email ..." 
+                                />
+                                <div class="col-12 testmodal__btn d-flex justify-content-end">
+                                    <button 
+                                        type="submit" 
+                                        class="btn btn-primary">
+                                        Subscribe
+                                    </button>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

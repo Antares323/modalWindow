@@ -8,7 +8,6 @@ const timeout = 800
 if (modalLinks.length > 0) {
     for (let modal of modalLinks) {
         const modalLink = modal
-        console.log(modal)
         modalLink.addEventListener('click', (e) => {
             const modalName = modal.getAttribute('href').replace('#', '')
             const curentModal = document.getElementById(modalName)
@@ -32,7 +31,6 @@ if (modalCloseIcon.length > 0) {
 const modalOpen = (curentModal) => {
     if (curentModal && unlock) {
         const modalActive = document.querySelector('.testmodal')
-        console.log(modalActive)
         if (curentModal) {
             modalClose(modalActive, false)
         } else {

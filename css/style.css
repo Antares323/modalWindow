@@ -69,7 +69,14 @@
 }
 
 .testmodal__img {
+    width: auto;
     text-align: center;
+}
+
+.testmodal__img img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
 
 .testmodal__btn {
@@ -77,5 +84,5 @@
 }
 
 .testmodal__link {
-    margin-left: auto;
+    margin-top: 20px;
 }
